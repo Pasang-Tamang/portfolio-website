@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+
+
+
+.resume-header{
+    width:79%;
+    margin-left: 20%;
+   
+
+}
+
+.resume-header h1{
+    font-size: 35px;
+    padding: 25px 32px;
+}
+
+.resume-main-container{
+  
+    width:78%;
+    display: flex;
+    margin-left:21%;
+   
+    padding:20px;
+   
+}
+
+.resume-main-container .left-container{
+   
+    width:47%;
+
+}
+
+.resume-main-container .left-container .intro{
+   
+    margin-bottom:40px;
+}
+
+
+.resume-main-container .right-container{
+
+    width:50%;
+    
+}
+
+
+.resume-main-container .right-container .resume-title{
+    font-size: 26px;
+    
+}
+
+.line-left {
+  display: inline-block;
+  position: relative;
+  border:1px solid black;/* Adjust the height as needed */
+}
+
+.line-left::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 1.5px; /* Adjust the width as needed */
+  height: 200px;
+ background-color:#1f5297; /* Adjust the color as needed */
+}
+
+.line-left::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  /* Adjust the position as needed */
+  width: 12px; /* Adjust the size as needed */
+  height: 12px; /* Adjust the size as needed */
+  border-radius: 50px;
+  background:#fff;
+ border:2px solid #1f5297;; /* Adjust the color as needed */
+}
+
+.resume-main-container .left-container .resume h4 {
+    font-size: 20px;
+    margin:-5px 0 20px 30px;
+    
+}
+
+.resume-main-container .left-container .resume p{
+    padding: 0 30px 10px 30px;
+}
+
+.resume-main-container .left-container .resume ul li{
+    margin:10px 45px;
+    
+}
+
+.resume-main-container .right-container .education h5{
+    
+    margin-left: 30px;
+    padding: 5px 12px;
+    border: 1px solid lightblue;
+    display:inline;
+    background-color: aliceblue;
+    color:black;
+    font-size: 13px;
+    
+}
+
+.resume-main-container .right-container .education h6{
+    font-size: 15px;
+    font-weight: 520;
+    padding: 15px 0 0 30px;
+
+
+}
+
+.resume-main-container .right-container .education .clz-name{
+    
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 0.7px;
+
+}
+
+.resume-main-container .right-container .education .resume .location{
+    margin-bottom: 20px;
+
+
+}
+
+.resume-main-container .left-container .resume-title{
+    font-size: 26px;
+    
+}
+
+.resume-main-container .right-container .resume h4 {
+    font-size: 20px;
+    margin:-5px 0 20px 30px;
+    
+}
+
+.resume-main-container .left-container .resume h6{
+    font-size: 15px;
+    font-weight: 520;
+    padding: 15px 0 0 30px;
+
+
+}
+
+
+.resume-main-container .left-container .resume .company-name{
+    
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+
+}
+
+
+.resume-main-container .left-container .resume h5{
+    
+    margin-left: 30px;
+    padding: 5px 12px;
+    border: 1px solid lightblue;
+    display:inline;
+    background-color: aliceblue;
+    color:black;
+    font-size: 13px;
+    
+}
+
+.resume-main-container .left-container .resume ul li{
+    margin:10px 45px;
+    
+}
+
+.skills{
+   
+    width:77%;
+    margin:2% 0 0 19%;
+    height: 40%;
+    background: #f5f8fd;
+    padding:20px 57px;
+    
+}
+
+.skill-progress{
+    display: flex;
+}
+
+.skill-progress .left-container{
+    width:48%;
+    
+}
+
+.skill-progress .right-container{
+    width:50%;
+   
+}
+
+.skills h1{
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+
+.skill-progress .progress span{
+   
+    display: inline-block;
+    width: 96%;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.skill-progress .progress i{
+   margin-left: 73%;
+   font-style: normal;
+}
+
+.progressbar{
+    height: 6px;
+    width: 85%;
+    border: 1px;
+    background:  #00A3E1;
+    margin-bottom: 25px;
+}
+
+.progressbar-wrap{
+    height: 6px;
+    width: 85%;
+    border: 1px;
+    background: #dce8f8;
+    margin-bottom: 25px;
+}
+
+#css{
+    margin-left: 78%;
+}
+
+.css .progressbar{
+    width: 70%;
+    
+}
+
+#javascript{
+    margin-left: 71%;
+}
+
+.javascript .progressbar{
+    width: 50%;
+    
+}
+
+
+#bootstrap{
+    margin-left: 71%;
+}
+
+.bootstrap .progressbar{
+    width: 20%;
+    
+}
+
+
+#networking{
+    margin-left: 69%;
+}
+
+.networking .progressbar{
+    width: 70%;
+    
+}
+
+.security .progressbar{
+    width: 40%;
+    
+}
+
+#python{
+    margin-left: 75%;
+}
+
+.python .progressbar{
+    width: 30%;
+    
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="../assets/me.jpg" alt="my-photo">
+                <h3>Pasang Tamang</h3>
+            </div>
+
+            <div class="social-media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-skype"></i>
+            </div>
+
+            <div class="navlinks">
+                <ul>
+                    <li><a href="../index.html"><img src="../svg/home.svg" height="25px;" width="25px;">Home</a></li>
+                    <li><a href="./aboutme.html"><img src="../svg/about.svg" height="25px;" width="25px;">About Me</a></li>
+                    <li><a href="./resume.html"><img src="../svg/resume.svg" height="25px;" width="25px;">Resume</a></li>
+                    <li><a href="./contact.html"><img src="../svg/contact.svg" height="25px;" width="25px;">Contact</a></li>
+                </ul>
+
+              
+
+                
+
+            </div>
+
+            <div class="chat">
+                    
+                <img src="../svg/chat.svg" height="25px;" width="25px;">
+                <h5>Let's Chat</h5>
+                </div>
+
+            <div class="footer">
+                <p>&copy; Copyright <br>
+                    2023 by Pasang Dolmo Tamang
+                </p>
+    
+            </div>
+
+        </div>
+
+
+
+        
+        <div class="resume-header">
+            <h1>Resume</h1>
+           <hr>
+        </div>
+
+        <div class="resume-main-container">
+            <div class="left-container">
+                <div class="intro">
+                   <h3 class="resume-title">Summary</h3>
+                   <div class="resume item">
+                    <span class="line-left"></span>
+                    <h4>Pasang Tamang</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quasi sed sunt, laborum necessitatibus quaerat Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+                    <ul>
+                        <li>archielama957@gmail.com</li>
+                        <li>Balaju, Kathmandu</li>
+                        <li>+977 9823225198</li>
+                    </ul>
+                </div>
+                    
+                    </div>
+
+                
+                    <div class="experience">
+                        <h3 class="resume-title">Experience</h3>
+    
+                        <div class="resume item-1">
+                            <span class="line-left"></span>
+        
+                            <h4>System/Network Intern</h4>
+                            <h5>09/2022 - 12/2022</h5>
+                            <h6 class="company-name">LIS Nepal Pvt.Ltd </h6>
+        
+                            <ul>
+                                <li>Basic Configuration on AP, Switch, Firewall, DHCP and DNS server
+                                  .</li>
+                                <li>Internal System and network device monitoring.
+                              </li>
+                                <li>Basic use of Active Directory Domain Service.</li>
+  
+                                <li>Hardware and Software Support</li>
+                            </ul>
+                        </div>
+  
+                       
+                  </div>
+                
+            
+            </div>
+
+
+            
+            <div class="right-container">
+                
+                <div class="education">
+                    <h3 class="resume-title">Education</h3>
+                    <div class="resume item-1">
+                     <span class="line-left"></span>
+                     <h4>BSc(Hons) Networking and IT security</h4>
+                     <h5>2021-2023</h5>
+                     <h6 class="clz-name">Islington College</h6>
+                     <h6 class="board">London Metropolitan University</h6>
+                     <h6 class="location">Kamalmarg, Kamalpokhari, Kathmandu</h6>
+
+
+                    
+                     
+                     </div>
+
+                     <div class="resume item-2">
+                        <span class="line-left"></span>
+                        <h4>SLC</h4>
+                        <h5>2018-2020</h5>
+                        <h6 class="clz-name">Trinity International Secondary School
+                        </h6>
+                        <h6 class="board">NEB +2 Science</h6>
+                        <h6 class="location">Dillibazar, Kathmandu</h6>
+ 
+                    
+                 </div>
+
+                 
+                 <div class="resume item-3">
+                    <span class="line-left"></span>
+                    <h4>SEE</h4>
+                    <h5>2018</h5>
+                    <h6 class="clz-name">Bhairum Higher Secondary School</h6>
+                    <h6 class="board">Secondary Education Examination</h6>
+                    <h6 class="location">Hattigauda, Bidur, Nuwakot</h6>
+
+                
+             </div>
+
+                
+            </div>
+          
+
+              </div> 
+
+
+
+
+        </div>
+
+
+        <div class="skills">
+            <div class="skill-header">
+                <h1>Skills</h1>
+
+            </div>
+
+
+            <div class="skill-progress">
+                <div class="left-container">
+                    <div class="progress html">
+                        
+                        <span>HTML
+                            <i >100%</i>
+                        </span>
+
+                        <div class="progressbar"></div>
+
+                    </div>
+
+
+                    <div class="progress css">
+                        
+                        <span>CSS
+                            <i id="css">70%</i>
+                        </span>
+
+                        <div class=" progressbar-wrap">
+                            <div class="progressbar"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress javascript">
+                        
+                        <span >Javascript
+                            <i id="javascript">50%</i>
+                        </span>
+
+                        <div class="progressbar-wrap">
+                            <div class="progressbar"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress bootstrap">
+                        
+                        <span >Bootstrap
+                            <i id="bootstrap">50%</i>
+                        </span>
+
+                        <div class="progressbar-wrap">
+                            <div class="progressbar"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="right-container">
+                    <div class="progress networking">
+                        
+                        <span>Networking
+                            <i id="networking">70%</i>
+                        </span>
+
+                        <div class=" progressbar-wrap">
+                            <div class="progressbar"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="progress security">
+                        
+                        <span>Security
+                            <i id="security">40%</i>
+                        </span>
+
+                        <div class=" progressbar-wrap">
+                            <div class="progressbar"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress python">
+                        
+                        <span>Python
+                            <i id="python">30%</i>
+                        </span>
+
+                        <div class=" progressbar-wrap">
+                            <div class="progressbar"></div>
+                        </div>
+
+                    </div>
+
+
+                  
+                </div>
+            </div>
+        </div>
+
+   
+    
+
+      </section>
+    
+       
+
+
+    
+</body>
+</html>
