@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Contact</title>
+
+    <style>
+
+    
+ .main-container{
+    height:100%;
+   
+}
+
+.contact-header{
+    width:79%;
+    margin-left: 20%;
+   
+
+}
+
+.contact-header h1{
+    font-size: 45px;
+    padding: 20px 32px;
+}
+
+        
+        
+
+
+        .contact-info{
+            display: flex;
+            width:80%;
+            position:absolute;
+            left:22%;
+            top:18%;
+            height: 85%;
+           
+        }
+
+        .contact-form{
+          width:53%;
+          height: 95%;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          margin-right:50px;
+      }
+
+      .contact-form div{
+          padding:35px 30px 0 30px;
+          display:flex;
+          flex-direction: column;
+      }
+
+      .contact-form label{
+          margin-bottom:8px;
+          font-size: 17px;
+          font-weight: 500;
+      }
+
+      .contact-form input{
+          font-size: 14px;
+          padding:5px 2px;
+          border-color:#ffffff;
+          border:2px solid #999;
+          background-color: transparent;
+          color:#fff;
+          
+      }
+
+      .contact-form button{
+          margin: 40px 0 0 30px;
+          
+          text-transform: uppercase;
+          font-size: 14px;
+          padding:5px 12px;
+          color: white;
+          border:1px solid blue;
+          border-radius: 5px;
+          cursor:pointer;
+          transition: 1s;
+          background-color: #00A3E1;
+          
+      }
+
+      .contact-form textarea{
+        border-color:#ffffff;
+          border:2px solid #999;
+         
+          color:#fff;
+          
+      }
+
+      form button:hover{
+        background: none;
+        color:black;
+      }
+
+        .contact-info .contact-media{
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 38%;
+            height: 95%;
+            
+        }
+        
+        .contact-info .contact-media div{
+            display:flex;
+            flex-direction: row;
+            padding:20px 0px 5px 20px;
+            font-size: 18px;
+            align-items: center;   
+        }
+
+        .contact-media .fa-solid{
+            font-size:25px;
+            margin-right:10px;
+            color:#00A3E1;
+        }
+        #map{
+            padding: 35px;    
+        }
+
+        #map iframe{
+            border: 5px solid white;   
+        } 
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="../assets/me.jpg" alt="my-photo">
+                <h3>Pasang Tamang</h3>
+            </div>
+
+            <div class="social-media-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-skype"></i>
+            </div>
+
+            <div class="navlinks">
+                <ul>
+                    <li><a href="../index.html"><img src="../svg/home.svg" height="25px;" width="25px;">Home</a></li>
+                    <li><a href="./aboutme.html"><img src="../svg/about.svg" height="25px;" width="25px;">About Me</a></li>
+                    <li><a href="./resume.html"><img src="../svg/resume.svg" height="25px;" width="25px;">Resume</a></li>
+                    <li><a href="./contact.html"><img src="../svg/contact.svg" height="25px;" width="25px;">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <div class="chat">
+                    
+                <img src="../svg/chat.svg" height="25px;" width="25px;">
+                <h5>Let's Chat</h5>
+                </div>
+
+            <div class="footer">
+                <p>&copy; Copyright <br>
+                    2023 by Pasang Dolmo Tamang
+                </p>
+    
+            </div>
+
+        </div>
+
+
+        <div class="contact-header">
+            <h1>Contact Me</h1>
+           <hr>
+        </div>
+      
+        <div class="contact-info">
+            
+            <div class="contact-form">
+                <form action="Submit">
+                    <div class="fullname">
+                        <label for="fullname">Full Name</label>
+                    <input 
+                        id="fullname"
+                        type="text"
+                        placeholder="Enter your Name"
+                        required
+                        
+                    >
+                    </div>
+                
+                   <div class="email">
+                        <label for="email">Email</label>
+                        <input 
+                            id="email"
+                            type="email"
+                            placeholder="Enter your Email"
+                            required
+                            
+                        >
+                   </div>
+                      
+                   <div class="phone">
+                        <label for="phonenumber">Phone Number</label>
+                        <input 
+                            id="phonenumber"
+                            type="tel"
+                            placeholder="+977 9823225198"
+                            required        
+                        >
+                   </div>
+                    
+                   <div class="subject">
+                        <label for="subject">Subject</label>
+                        <input 
+                            id="subject"
+                            type="text"
+                            placeholder="Enter your subject"
+                            required       
+                        >
+                   </div>
+
+                   <div class="message">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        type="text"
+                        rows="4"
+                        cols="3"
+                
+                        required
+                    >
+                    </textarea>
+                   </div>
+                    <button>
+                        Submit
+                    </button>
+                </form>
+
+            </div>
+
+            <div class="contact-media">
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>+977 9823225198</h4>
+                   </div>
+                   <div class="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>archielama957@gmail.com</h4>
+                   </div>
+                  <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4>Balaju, Kathmandu, Nepal</h4>
+                  </div>
+
+                
+                <div class="location" id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7769.368002825725!2d85.28470860216318!3d27.73150810019502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18c11dac7aed%3A0xe71ba78690a8b3fe!2sSamarpan%20Chowk!5e0!3m2!1sen!2snp!4v1687683423499!5m2!1sen!2snp" width="430" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+
+    </section>
+</body>
+</html>
